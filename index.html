@@ -1,22 +1,15 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <title>Student Dashboard with Dark Mode</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- Bootstrap CSS & Icons -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-    rel="stylesheet"
-  />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
 
   <style>
-    /* Base Styles */
     body {
       min-height: 100vh;
       transition: background-color 0.3s, color 0.3s;
@@ -34,6 +27,7 @@
       width: 240px;
       transition: all 0.3s ease;
       overflow-y: auto;
+      z-index: 1040;
     }
 
     .sidebar a {
@@ -64,17 +58,6 @@
       transition: all 0.3s ease;
     }
 
-    @media (max-width: 768px) {
-      .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
-      }
-      .main-content {
-        margin-left: 0;
-      }
-    }
-
     /* Navbar */
     .navbar {
       position: fixed;
@@ -83,12 +66,7 @@
       right: 0;
       z-index: 1030;
       transition: all 0.3s ease;
-    }
-
-    @media (max-width: 768px) {
-      .navbar {
-        left: 0;
-      }
+      background-color: #f8f9fa !important;
     }
 
     /* Dark Mode Styles */
@@ -128,7 +106,6 @@
       background-color: #222 !important;
     }
 
-    /* Profile image border */
     .profile-img {
       border: 3px solid #007bff;
       border-radius: 50%;
@@ -136,18 +113,37 @@
       height: 80px;
       object-fit: cover;
     }
+
+    .navbar-brand img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    /* Responsive Sidebar */
+    @media (max-width: 768px) {
+      .sidebar {
+        left: -240px;
+      }
+
+      .sidebar.show {
+        left: 0;
+      }
+
+      .main-content {
+        margin-left: 0 !important;
+      }
+
+      .navbar {
+        left: 0 !important;
+      }
+    }
   </style>
 </head>
-
 <body>
   <!-- Sidebar -->
   <nav class="sidebar">
     <div class="text-center mb-4">
-      <img
-        src="./876861686765765246386.jpg"
-        alt="Profile"
-        class="profile-img mb-2"
-      />
+      <img src="./876861686765765246386.jpg" alt="Profile" class="profile-img mb-2" />
       <h5>John Doe</h5>
       <p class="small text-white-50">Student ID: STU123456</p>
     </div>
@@ -158,75 +154,55 @@
           <i class="bi bi-house-door-fill me-2"></i> Dashboard
         </a>
       </li>
-
       <li class="nav-item dropdown">
-        <a
-          class="nav-link dropdown-toggle"
-          href="#"
-          data-bs-toggle="dropdown"
-          role="button"
-          aria-expanded="false"
-        >
+        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" role="button" aria-expanded="false">
           <i class="bi bi-book-fill me-2"></i> Courses
         </a>
         <ul class="dropdown-menu">
-          <li><a class="dropdown-item text-white" href="html.html">html</a></li>
-          
+          <li><a class="dropdown-item text-white" href="html.html">HTML</a></li>
         </ul>
       </li>
-
       <li class="nav-item">
         <a href="quiz.html" class="nav-link">
           <i class="bi bi-card-list me-2"></i> Quiz
         </a>
       </li>
-
-        <li class="nav-item">
+      <li class="nav-item">
         <a href="complains.html" class="nav-link">
           <i class="bi bi-card-list me-2"></i> Complains
         </a>
       </li>
-
       <li class="nav-item dropdown">
-        <a
-          class="nav-link dropdown-toggle"
-          href="#"
-          data-bs-toggle="dropdown"
-          role="button"
-          aria-expanded="false"
-        >
+        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" role="button" aria-expanded="false">
           <i class="bi bi-gear-fill me-2"></i> Settings
         </a>
         <ul class="dropdown-menu">
-        
-     
-
+          <!-- Future Settings Items -->
+        </ul>
+      </li>
       <li class="nav-item">
         <a href="logout.html" class="nav-link text-danger">
           <i class="bi bi-box-arrow-right me-2"></i> Logout
         </a>
       </li>
-    </li>
-
     </ul>
   </nav>
 
   <!-- Navbar -->
-  <nav
-    class="navbar navbar-expand-lg navbar-light bg-light shadow-sm"
-    style="height: 60px"
-  >
+  <nav class="navbar navbar-expand-lg shadow-sm" style="height: 60px">
     <div class="container-fluid">
+      <!-- Hamburger for small screens -->
       <button
-        class="btn btn-primary d-lg-none"
-        type="button"
-        data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasSidebar"
-        aria-controls="offcanvasSidebar"
+        class="btn btn-outline-secondary d-lg-none me-3"
+        id="sidebarToggle"
+        aria-label="Toggle Sidebar"
       >
         <i class="bi bi-list"></i>
       </button>
 
+    
+
+      <!-- Dark Mode Toggle -->
       <div class="d-flex align-items-center ms-auto">
         <button
           class="btn btn-outline-secondary"
@@ -241,14 +217,10 @@
   </nav>
 
   <!-- Main Content -->
-  <div class="main-content">
+  <div class="main-content pt-5 mt-3">
     <h2>Welcome, John!</h2>
-    <p>
-      This is your student dashboard. Use the sidebar to navigate through your
-      courses, results, and settings.
-    </p>
+    <p>This is your student dashboard. Use the sidebar to navigate through your courses, results, and settings.</p>
 
-    <!-- Cards -->
     <div class="row mt-4">
       <div class="col-md-4">
         <div class="card text-bg-primary mb-3">
@@ -285,20 +257,19 @@
     </div>
   </div>
 
-  <!-- Bootstrap JS Bundle -->
+  <!-- Bootstrap Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
   <script>
+    // Dark mode toggle
     const darkToggleBtn = document.getElementById("darkModeToggle");
     const body = document.body;
 
-    // Load saved mode on page load
     if (localStorage.getItem("darkMode") === "enabled") {
       body.classList.add("dark-mode");
       darkToggleBtn.innerHTML = '<i class="bi bi-sun-fill"></i>';
     }
 
-    // Toggle dark mode on button click
     darkToggleBtn.addEventListener("click", () => {
       body.classList.toggle("dark-mode");
 
@@ -309,6 +280,14 @@
         localStorage.setItem("darkMode", "disabled");
         darkToggleBtn.innerHTML = '<i class="bi bi-moon-fill"></i>';
       }
+    });
+
+    // Sidebar toggle on small screens
+    const sidebarToggleBtn = document.getElementById("sidebarToggle");
+    const sidebar = document.querySelector(".sidebar");
+
+    sidebarToggleBtn.addEventListener("click", () => {
+      sidebar.classList.toggle("show");
     });
   </script>
 </body>

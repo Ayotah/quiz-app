@@ -66,7 +66,7 @@
   </div>
 
   <!-- Quiz Form -->
-  <form id="quizForm" action="submit.html" method="POST">
+  <form id="quizForm" action="" method="POST">
 
     <p class="question">1) Which of the following are programming languages?</p>
 
@@ -93,21 +93,21 @@
 
     <p class="question">2) What does HTML stand for?</p>
     <div class="form-check">
-      <input class="form-check-input" type="radio" value="HyperText Markup Language" id="chkHTMLFull" name="html" />
+      <input class="form-check-input" type="checkbox" value="HyperText Markup Language" id="chkHTMLFull" name="html" />
       <label class="form-check-label" for="chkHTMLFull">HyperText Markup Language</label>
     </div>
 
     <div class="form-check">
-      <input class="form-check-input" type="radio" value="HighText Machine Language" id="chkHTMLHigh" name="html" />
+      <input class="form-check-input" type="checkbox" value="HighText Machine Language" id="chkHTMLHigh" name="html" />
       <label class="form-check-label" for="chkHTMLHigh">HighText Machine Language</label>
     </div>
 
     <div class="form-check">
-      <input class="form-check-input" type="radio" value="HyperText Markup Leveler" id="chkHTMLLeveler" name="html" />
+      <input class="form-check-input" type="checkbox" value="HyperText Markup Leveler" id="chkHTMLLeveler" name="html" />
       <label class="form-check-label" for="chkHTMLLeveler">HyperText Markup Leveler</label>
     </div>
     <div class="form-check mb-3">
-      <input class="form-check-input" type="radio" value="None of the above" id="chkHTMLNone" name="html" />
+      <input class="form-check-input" type="checkbox" value="None of the above" id="chkHTMLNone" name="html" />
       <label class="form-check-label" for="chkHTMLNone">None of the above</label>
     </div>  
     <!--q2 end-->
@@ -134,7 +134,8 @@
       <label class="form-check-label" for="chkCSS">CSS</label>
     </div>
 <!--q3 end-->
-    <button type="submit" class="btn btn-primary mt-3">Submit Answers</button>
+    <!-- <button type="submit" class="btn btn-primary mt-3">Submit Answers</button> -->
+     <a type="submit" href="result.html" class="btn btn-primary mt-3">Submit Answers</a>
   </form>
 </div>
 
@@ -149,11 +150,11 @@
   const timerEl = document.getElementById("timer");
 
   let timerInterval;
-  let timeLeft = 10 * 10; // 10 minutes
+  let timeLeft = 10 * 60; // 10 minutes
 
   function updateTimer() {
-    const minutes = Math.floor(timeLeft / 10);
-    const seconds = timeLeft % 10;
+    const minutes = Math.floor(timeLeft / 60);
+    const seconds = timeLeft % 60;
     timerEl.textContent = `${minutes}:${seconds < 10 ? '0' + seconds : seconds}`;
 
     if (timeLeft <= 0) {

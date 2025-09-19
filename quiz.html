@@ -313,78 +313,585 @@ button{
   </div>
 
   <!-- Quiz Form -->
-  <form id="quizForm" action="" method="POST">
+ <form id="quizForm" action="" method="POST">
 
-    <p class="question">1) Which of the following are programming languages?</p>
+  <!-- Question 1 -->
+  <p class="question">1) What does HTML stand for?</p>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="HyperText Markup Language" id="q1opt1" name="q1[]" />
+    <label class="form-check-label" for="q1opt1">HyperText Markup Language</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="Hyperlinks and Text Markup Language" id="q1opt2" name="q1[]" />
+    <label class="form-check-label" for="q1opt2">Hyperlinks and Text Markup Language</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="Home Tool Markup Language" id="q1opt3" name="q1[]" />
+    <label class="form-check-label" for="q1opt3">Home Tool Markup Language</label>
+  </div>
+  <div class="form-check mb-3">
+    <input class="form-check-input" type="checkbox" value="Hyperlinking Text Markup Language" id="q1opt4" name="q1[]" />
+    <label class="form-check-label" for="q1opt4">Hyperlinking Text Markup Language</label>
+  </div>
 
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="Python" id="chkPython" name="languages[]" />
-      <label class="form-check-label" for="chkPython">Python</label>
-    </div>
+  <!-- Question 2 -->
+  <p class="question">2) Which tag is used to create a hyperlink in HTML?</p>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;a&gt;" id="q2opt1" name="q2[]" />
+    <label class="form-check-label" for="q2opt1">&lt;a&gt;</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;link&gt;" id="q2opt2" name="q2[]" />
+    <label class="form-check-label" for="q2opt2">&lt;link&gt;</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;href&gt;" id="q2opt3" name="q2[]" />
+    <label class="form-check-label" for="q2opt3">&lt;href&gt;</label>
+  </div>
+  <div class="form-check mb-3">
+    <input class="form-check-input" type="checkbox" value="&lt;url&gt;" id="q2opt4" name="q2[]" />
+    <label class="form-check-label" for="q2opt4">&lt;url&gt;</label>
+  </div>
 
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="HTML" id="chkHTML" name="languages[]" />
-      <label class="form-check-label" for="chkHTML">HTML</label>
-    </div>
+  <!-- Question 3 -->
+  <p class="question">3) Which attribute is used to specify an alternate text for an image?</p>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="alt" id="q3opt1" name="q3[]" />
+    <label class="form-check-label" for="q3opt1">alt</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="title" id="q3opt2" name="q3[]" />
+    <label class="form-check-label" for="q3opt2">title</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="src" id="q3opt3" name="q3[]" />
+    <label class="form-check-label" for="q3opt3">src</label>
+  </div>
+  <div class="form-check mb-3">
+    <input class="form-check-input" type="checkbox" value="alt-text" id="q3opt4" name="q3[]" />
+    <label class="form-check-label" for="q3opt4">alt-text</label>
+  </div>
 
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="JavaScript" id="chkJavaScript" name="languages[]" />
-      <label class="form-check-label" for="chkJavaScript">JavaScript</label>
-    </div>
+  <!-- Question 4 -->
+  <p class="question">4) Which HTML element is used to define the title of a document?</p>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;title&gt;" id="q4opt1" name="q4[]" />
+    <label class="form-check-label" for="q4opt1">&lt;title&gt;</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;head&gt;" id="q4opt2" name="q4[]" />
+    <label class="form-check-label" for="q4opt2">&lt;head&gt;</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;header&gt;" id="q4opt3" name="q4[]" />
+    <label class="form-check-label" for="q4opt3">&lt;header&gt;</label>
+  </div>
+  <div class="form-check mb-3">
+    <input class="form-check-input" type="checkbox" value="&lt;meta&gt;" id="q4opt4" name="q4[]" />
+    <label class="form-check-label" for="q4opt4">&lt;meta&gt;</label>
+  </div>
 
-    <div class="form-check mb-3">
-      <input class="form-check-input" type="checkbox" value="CSS" id="chkCSS" name="languages[]" />
-      <label class="form-check-label" for="chkCSS">CSS</label>
-    </div>
-<!--q1 end-->
+  <!-- Question 5 -->
+  <p class="question">5) How do you insert a comment in an HTML file?</p>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;!-- comment --&gt;" id="q5opt1" name="q5[]" />
+    <label class="form-check-label" for="q5opt1">&lt;!-- comment --&gt;</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;comment&gt;" id="q5opt2" name="q5[]" />
+    <label class="form-check-label" for="q5opt2">&lt;comment&gt;</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="// comment" id="q5opt3" name="q5[]" />
+    <label class="form-check-label" for="q5opt3">// comment</label>
+  </div>
+  <div class="form-check mb-3">
+    <input class="form-check-input" type="checkbox" value="/* comment */" id="q5opt4" name="q5[]" />
+    <label class="form-check-label" for="q5opt4">/* comment */</label>
+  </div>
 
-    <p class="question">2) What does HTML stand for?</p>
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="HyperText Markup Language" id="chkHTMLFull" name="html" />
-      <label class="form-check-label" for="chkHTMLFull">HyperText Markup Language</label>
-    </div>
+  <!-- Question 6 -->
+  <p class="question">6) Which HTML tag is used to define an unordered list?</p>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;ul&gt;" id="q6opt1" name="q6[]" />
+    <label class="form-check-label" for="q6opt1">&lt;ul&gt;</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;ol&gt;" id="q6opt2" name="q6[]" />
+    <label class="form-check-label" for="q6opt2">&lt;ol&gt;</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;li&gt;" id="q6opt3" name="q6[]" />
+    <label class="form-check-label" for="q6opt3">&lt;li&gt;</label>
+  </div>
+  <div class="form-check mb-3">
+    <input class="form-check-input" type="checkbox" value="&lt;list&gt;" id="q6opt4" name="q6[]" />
+    <label class="form-check-label" for="q6opt4">&lt;list&gt;</label>
+  </div>
 
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="HighText Machine Language" id="chkHTMLHigh" name="html" />
-      <label class="form-check-label" for="chkHTMLHigh">HighText Machine Language</label>
-    </div>
+  <!-- Question 7 -->
+  <p class="question">7) Which tag defines a table row in HTML?</p>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;tr&gt;" id="q7opt1" name="q7[]" />
+    <label class="form-check-label" for="q7opt1">&lt;tr&gt;</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;td&gt;" id="q7opt2" name="q7[]" />
+    <label class="form-check-label" for="q7opt2">&lt;td&gt;</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;th&gt;" id="q7opt3" name="q7[]" />
+    <label class="form-check-label" for="q7opt3">&lt;th&gt;</label>
+  </div>
+  <div class="form-check mb-3">
+    <input class="form-check-input" type="checkbox" value="&lt;table-row&gt;" id="q7opt4" name="q7[]" />
+    <label class="form-check-label" for="q7opt4">&lt;table-row&gt;</label>
+  </div>
 
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="HyperText Markup Leveler" id="chkHTMLLeveler" name="html" />
-      <label class="form-check-label" for="chkHTMLLeveler">HyperText Markup Leveler</label>
-    </div>
-    <div class="form-check mb-3">
-      <input class="form-check-input" type="checkbox" value="None of the above" id="chkHTMLNone" name="html" />
-      <label class="form-check-label" for="chkHTMLNone">None of the above</label>
-    </div>  
-    <!--q2 end-->
+  <!-- Question 8 -->
+  <p class="question">8) Which attribute specifies the URL of an image?</p>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="src" id="q8opt1" name="q8[]" />
+    <label class="form-check-label" for="q8opt1">src</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="href" id="q8opt2" name="q8[]" />
+    <label class="form-check-label" for="q8opt2">href</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="link" id="q8opt3" name="q8[]" />
+    <label class="form-check-label" for="q8opt3">link</label>
+  </div>
+  <div class="form-check mb-3">
+    <input class="form-check-input" type="checkbox" value="url" id="q8opt4" name="q8[]" />
+    <label class="form-check-label" for="q8opt4">url</label>
+  </div>
 
-    <p class="question">1) Which of the following are programming languages?</p>
+  <!-- Question 9 -->
+  <p class="question">9) Which tag is used for inserting a line break?</p>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;br&gt;" id="q9opt1" name="q9[]" />
+    <label class="form-check-label" for="q9opt1">&lt;br&gt;</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;break&gt;" id="q9opt2" name="q9[]" />
+    <label class="form-check-label" for="q9opt2">&lt;break&gt;</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;lb&gt;" id="q9opt3" name="q9[]" />
+    <label class="form-check-label" for="q9opt3">&lt;lb&gt;</label>
+  </div>
+  <div class="form-check mb-3">
+    <input class="form-check-input" type="checkbox" value="&lt;line&gt;" id="q9opt4" name="q9[]" />
+    <label class="form-check-label" for="q9opt4">&lt;line&gt;</label>
+  </div>
 
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="Python" id="chkPython" name="languages[]" />
-      <label class="form-check-label" for="chkPython">Python</label>
-    </div>
+  <!-- Question 10 -->
+  <p class="question">10) Which tag is used to add a background color in HTML?</p>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;body bgcolor=&quot;color&quot;&gt;" id="q10opt1" name="q10[]" />
+    <label class="form-check-label" for="q10opt1">&lt;body bgcolor="color"&gt;</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;background&gt;" id="q10opt2" name="q10[]" />
+    <label class="form-check-label" for="q10opt2">&lt;background&gt;</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;bgcolor&gt;" id="q10opt3" name="q10[]" />
+    <label class="form-check-label" for="q10opt3">&lt;bgcolor&gt;</label>
+  </div>
+  <div class="form-check mb-3">
+    <input class="form-check-input" type="checkbox" value="&lt;background-color&gt;" id="q10opt4" name="q10[]" />
+    <label class="form-check-label" for="q10opt4">&lt;background-color&gt;</label>
+  </div>
 
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="HTML" id="chkHTML" name="languages[]" />
-      <label class="form-check-label" for="chkHTML">HTML</label>
-    </div>
+  <!-- Question 11 -->
+  <p class="question">11) Which HTML element is used to define important text?</p>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;strong&gt;" id="q11opt1" name="q11[]" />
+    <label class="form-check-label" for="q11opt1">&lt;strong&gt;</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;important&gt;" id="q11opt2" name="q11[]" />
+    <label class="form-check-label" for="q11opt2">&lt;important&gt;</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;b&gt;" id="q11opt3" name="q11[]" />
+    <label class="form-check-label" for="q11opt3">&lt;b&gt;</label>
+  </div>
+  <div class="form-check mb-3">
+    <input class="form-check-input" type="checkbox" value="&lt;em&gt;" id="q11opt4" name="q11[]" />
+    <label class="form-check-label" for="q11opt4">&lt;em&gt;</label>
+  </div>
 
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="JavaScript" id="chkJavaScript" name="languages[]" />
-      <label class="form-check-label" for="chkJavaScript">JavaScript</label>
-    </div>
+  <!-- Question 12 -->
+  <p class="question">12) Which tag is used to define a checkbox in a form?</p>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;input type=&quot;checkbox&quot;&gt;" id="q12opt1" name="q12[]" />
+    <label class="form-check-label" for="q12opt1">&lt;input type="checkbox"&gt;</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;checkbox&gt;" id="q12opt2" name="q12[]" />
+    <label class="form-check-label" for="q12opt2">&lt;checkbox&gt;</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;check&gt;" id="q12opt3" name="q12[]" />
+    <label class="form-check-label" for="q12opt3">&lt;check&gt;</label>
+  </div>
+  <div class="form-check mb-3">
+    <input class="form-check-input" type="checkbox" value="&lt;input type=&quot;check&quot;&gt;" id="q12opt4" name="q12[]" />
+    <label class="form-check-label" for="q12opt4">&lt;input type="check"&gt;</label>
+  </div>
 
-    <div class="form-check mb-3">
-      <input class="form-check-input" type="checkbox" value="CSS" id="chkCSS" name="languages[]" />
-      <label class="form-check-label" for="chkCSS">CSS</label>
-    </div>
-<!--q3 end-->
-    <!-- <button type="submit" class="btn btn-primary mt-3">Submit Answers</button> -->
-     <a type="submit" href="result.html" class="btn btn-primary mt-3">Submit Answers</a>
-  </form>
+  <!-- Question 13 -->
+  <p class="question">13) What is the correct HTML element for inserting a line break?</p>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;br&gt;" id="q13opt1" name="q13[]" />
+    <label class="form-check-label" for="q13opt1">&lt;br&gt;</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;break&gt;" id="q13opt2" name="q13[]" />
+    <label class="form-check-label" for="q13opt2">&lt;break&gt;</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;lb&gt;" id="q13opt3" name="q13[]" />
+    <label class="form-check-label" for="q13opt3">&lt;lb&gt;</label>
+  </div>
+  <div class="form-check mb-3">
+    <input class="form-check-input" type="checkbox" value="&lt;newline&gt;" id="q13opt4" name="q13[]" />
+    <label class="form-check-label" for="q13opt4">&lt;newline&gt;</label>
+  </div>
+
+  <!-- Question 14 -->
+  <p class="question">14) Which attribute is used to open a link in a new tab?</p>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="target=&quot;_blank&quot;" id="q14opt1" name="q14[]" />
+    <label class="form-check-label" for="q14opt1">target="_blank"</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="href=&quot;_blank&quot;" id="q14opt2" name="q14[]" />
+    <label class="form-check-label" for="q14opt2">href="_blank"</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="new=&quot;tab&quot;" id="q14opt3" name="q14[]" />
+    <label class="form-check-label" for="q14opt3">new="tab"</label>
+  </div>
+  <div class="form-check mb-3">
+    <input class="form-check-input" type="checkbox" value="open=&quot;new&quot;" id="q14opt4" name="q14[]" />
+    <label class="form-check-label" for="q14opt4">open="new"</label>
+  </div>
+
+  <!-- Question 15 -->
+  <p class="question">15) Which element is used for the largest heading in HTML?</p>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;h1&gt;" id="q15opt1" name="q15[]" />
+    <label class="form-check-label" for="q15opt1">&lt;h1&gt;</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;head&gt;" id="q15opt2" name="q15[]" />
+    <label class="form-check-label" for="q15opt2">&lt;head&gt;</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;heading&gt;" id="q15opt3" name="q15[]" />
+    <label class="form-check-label" for="q15opt3">&lt;heading&gt;</label>
+  </div>
+  <div class="form-check mb-3">
+    <input class="form-check-input" type="checkbox" value="&lt;h6&gt;" id="q15opt4" name="q15[]" />
+    <label class="form-check-label" for="q15opt4">&lt;h6&gt;</label>
+  </div>
+
+  <!-- Question 16 -->
+  <p class="question">16) What is the correct HTML element to define emphasized text?</p>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;em&gt;" id="q16opt1" name="q16[]" />
+    <label class="form-check-label" for="q16opt1">&lt;em&gt;</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;strong&gt;" id="q16opt2" name="q16[]" />
+    <label class="form-check-label" for="q16opt2">&lt;strong&gt;</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;i&gt;" id="q16opt3" name="q16[]" />
+    <label class="form-check-label" for="q16opt3">&lt;i&gt;</label>
+  </div>
+  <div class="form-check mb-3">
+    <input class="form-check-input" type="checkbox" value="&lt;italic&gt;" id="q16opt4" name="q16[]" />
+    <label class="form-check-label" for="q16opt4">&lt;italic&gt;</label>
+  </div>
+
+  <!-- Question 17 -->
+  <p class="question">17) Which input type defines a dropdown list?</p>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;select&gt;" id="q17opt1" name="q17[]" />
+    <label class="form-check-label" for="q17opt1">&lt;select&gt;</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;input type=&quot;dropdown&quot;&gt;" id="q17opt2" name="q17[]" />
+    <label class="form-check-label" for="q17opt2">&lt;input type="dropdown"&gt;</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;dropdown&gt;" id="q17opt3" name="q17[]" />
+    <label class="form-check-label" for="q17opt3">&lt;dropdown&gt;</label>
+  </div>
+  <div class="form-check mb-3">
+    <input class="form-check-input" type="checkbox" value="&lt;list&gt;" id="q17opt4" name="q17[]" />
+    <label class="form-check-label" for="q17opt4">&lt;list&gt;</label>
+  </div>
+
+  <!-- Question 18 -->
+  <p class="question">18) Which tag is used to add a video in HTML?</p>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;video&gt;" id="q18opt1" name="q18[]" />
+    <label class="form-check-label" for="q18opt1">&lt;video&gt;</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;media&gt;" id="q18opt2" name="q18[]" />
+    <label class="form-check-label" for="q18opt2">&lt;media&gt;</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;movie&gt;" id="q18opt3" name="q18[]" />
+    <label class="form-check-label" for="q18opt3">&lt;movie&gt;</label>
+  </div>
+  <div class="form-check mb-3">
+    <input class="form-check-input" type="checkbox" value="&lt;film&gt;" id="q18opt4" name="q18[]" />
+    <label class="form-check-label" for="q18opt4">&lt;film&gt;</label>
+  </div>
+
+  <!-- Question 19 -->
+  <p class="question">19) Which attribute is used to specify a unique id for an HTML element?</p>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="id" id="q19opt1" name="q19[]" />
+    <label class="form-check-label" for="q19opt1">id</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="class" id="q19opt2" name="q19[]" />
+    <label class="form-check-label" for="q19opt2">class</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="name" id="q19opt3" name="q19[]" />
+    <label class="form-check-label" for="q19opt3">name</label>
+  </div>
+  <div class="form-check mb-3">
+    <input class="form-check-input" type="checkbox" value="key" id="q19opt4" name="q19[]" />
+    <label class="form-check-label" for="q19opt4">key</label>
+  </div>
+
+  <!-- Question 20 -->
+  <p class="question">20) How do you create a numbered list in HTML?</p>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;ol&gt;" id="q20opt1" name="q20[]" />
+    <label class="form-check-label" for="q20opt1">&lt;ol&gt;</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;ul&gt;" id="q20opt2" name="q20[]" />
+    <label class="form-check-label" for="q20opt2">&lt;ul&gt;</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;list&gt;" id="q20opt3" name="q20[]" />
+    <label class="form-check-label" for="q20opt3">&lt;list&gt;</label>
+  </div>
+  <div class="form-check mb-3">
+    <input class="form-check-input" type="checkbox" value="&lt;li&gt;" id="q20opt4" name="q20[]" />
+    <label class="form-check-label" for="q20opt4">&lt;li&gt;</label>
+  </div>
+
+  <!-- Question 21 -->
+  <p class="question">21) What does the &lt;meta&gt; tag do?</p>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="Provides metadata about the HTML document" id="q21opt1" name="q21[]" />
+    <label class="form-check-label" for="q21opt1">Provides metadata about the HTML document</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="Defines the main content" id="q21opt2" name="q21[]" />
+    <label class="form-check-label" for="q21opt2">Defines the main content</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="Creates a paragraph" id="q21opt3" name="q21[]" />
+    <label class="form-check-label" for="q21opt3">Creates a paragraph</label>
+  </div>
+  <div class="form-check mb-3">
+    <input class="form-check-input" type="checkbox" value="Links external CSS" id="q21opt4" name="q21[]" />
+    <label class="form-check-label" for="q21opt4">Links external CSS</label>
+  </div>
+
+  <!-- Question 22 -->
+  <p class="question">22) Which attribute is used to provide a tooltip for an element?</p>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="title" id="q22opt1" name="q22[]" />
+    <label class="form-check-label" for="q22opt1">title</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="alt" id="q22opt2" name="q22[]" />
+    <label class="form-check-label" for="q22opt2">alt</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="tooltip" id="q22opt3" name="q22[]" />
+    <label class="form-check-label" for="q22opt3">tooltip</label>
+  </div>
+  <div class="form-check mb-3">
+    <input class="form-check-input" type="checkbox" value="hover" id="q22opt4" name="q22[]" />
+    <label class="form-check-label" for="q22opt4">hover</label>
+  </div>
+
+  <!-- Question 23 -->
+  <p class="question">23) Which tag is used to add an image in HTML?</p>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;img&gt;" id="q23opt1" name="q23[]" />
+    <label class="form-check-label" for="q23opt1">&lt;img&gt;</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;image&gt;" id="q23opt2" name="q23[]" />
+    <label class="form-check-label" for="q23opt2">&lt;image&gt;</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;picture&gt;" id="q23opt3" name="q23[]" />
+    <label class="form-check-label" for="q23opt3">&lt;picture&gt;</label>
+  </div>
+  <div class="form-check mb-3">
+    <input class="form-check-input" type="checkbox" value="&lt;src&gt;" id="q23opt4" name="q23[]" />
+    <label class="form-check-label" for="q23opt4">&lt;src&gt;</label>
+  </div>
+
+  <!-- Question 24 -->
+  <p class="question">24) Which element is used to define a footer in an HTML document?</p>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;footer&gt;" id="q24opt1" name="q24[]" />
+    <label class="form-check-label" for="q24opt1">&lt;footer&gt;</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;bottom&gt;" id="q24opt2" name="q24[]" />
+    <label class="form-check-label" for="q24opt2">&lt;bottom&gt;</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;section&gt;" id="q24opt3" name="q24[]" />
+    <label class="form-check-label" for="q24opt3">&lt;section&gt;</label>
+  </div>
+  <div class="form-check mb-3">
+    <input class="form-check-input" type="checkbox" value="&lt;foot&gt;" id="q24opt4" name="q24[]" />
+    <label class="form-check-label" for="q24opt4">&lt;foot&gt;</label>
+  </div>
+
+  <!-- Question 25 -->
+  <p class="question">25) How do you add a comment in HTML?</p>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;!-- comment --&gt;" id="q25opt1" name="q25[]" />
+    <label class="form-check-label" for="q25opt1">&lt;!-- comment --&gt;</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;comment&gt;" id="q25opt2" name="q25[]" />
+    <label class="form-check-label" for="q25opt2">&lt;comment&gt;</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;// comment" id="q25opt3" name="q25[]" />
+    <label class="form-check-label" for="q25opt3">&lt;// comment</label>
+  </div>
+  <div class="form-check mb-3">
+    <input class="form-check-input" type="checkbox" value="&lt;!--- comment ---&gt;" id="q25opt4" name="q25[]" />
+    <label class="form-check-label" for="q25opt4">&lt;!--- comment ---&gt;</label>
+  </div>
+
+  <!-- Question 26 -->
+  <p class="question">26) What does the &lt;a&gt; tag define?</p>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="A hyperlink" id="q26opt1" name="q26[]" />
+    <label class="form-check-label" for="q26opt1">A hyperlink</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="An anchor point" id="q26opt2" name="q26[]" />
+    <label class="form-check-label" for="q26opt2">An anchor point</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="A paragraph" id="q26opt3" name="q26[]" />
+    <label class="form-check-label" for="q26opt3">A paragraph</label>
+  </div>
+  <div class="form-check mb-3">
+    <input class="form-check-input" type="checkbox" value="A link to a stylesheet" id="q26opt4" name="q26[]" />
+    <label class="form-check-label" for="q26opt4">A link to a stylesheet</label>
+  </div>
+
+  <!-- Question 27 -->
+  <p class="question">27) Which tag is used to define a table row?</p>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;tr&gt;" id="q27opt1" name="q27[]" />
+    <label class="form-check-label" for="q27opt1">&lt;tr&gt;</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;table&gt;" id="q27opt2" name="q27[]" />
+    <label class="form-check-label" for="q27opt2">&lt;table&gt;</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;td&gt;" id="q27opt3" name="q27[]" />
+    <label class="form-check-label" for="q27opt3">&lt;td&gt;</label>
+  </div>
+  <div class="form-check mb-3">
+    <input class="form-check-input" type="checkbox" value="&lt;trow&gt;" id="q27opt4" name="q27[]" />
+    <label class="form-check-label" for="q27opt4">&lt;trow&gt;</label>
+  </div>
+
+  <!-- Question 28 -->
+  <p class="question">28) What does the &lt;title&gt; tag define?</p>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="The title of the document" id="q28opt1" name="q28[]" />
+    <label class="form-check-label" for="q28opt1">The title of the document</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="The main heading" id="q28opt2" name="q28[]" />
+    <label class="form-check-label" for="q28opt2">The main heading</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="A subheading" id="q28opt3" name="q28[]" />
+    <label class="form-check-label" for="q28opt3">A subheading</label>
+  </div>
+  <div class="form-check mb-3">
+    <input class="form-check-input" type="checkbox" value="The footer text" id="q28opt4" name="q28[]" />
+    <label class="form-check-label" for="q28opt4">The footer text</label>
+  </div>
+
+  <!-- Question 29 -->
+  <p class="question">29) Which tag is used to insert a horizontal line?</p>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;hr&gt;" id="q29opt1" name="q29[]" />
+    <label class="form-check-label" for="q29opt1">&lt;hr&gt;</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;line&gt;" id="q29opt2" name="q29[]" />
+    <label class="form-check-label" for="q29opt2">&lt;line&gt;</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;hl&gt;" id="q29opt3" name="q29[]" />
+    <label class="form-check-label" for="q29opt3">&lt;hl&gt;</label>
+  </div>
+  <div class="form-check mb-3">
+    <input class="form-check-input" type="checkbox" value="&lt;hline&gt;" id="q29opt4" name="q29[]" />
+    <label class="form-check-label" for="q29opt4">&lt;hline&gt;</label>
+  </div>
+
+  <!-- Question 30 -->
+  <p class="question">30) Which HTML tag is used to display a picture on a webpage?</p>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;img&gt;" id="q30opt1" name="q30[]" />
+    <label class="form-check-label" for="q30opt1">&lt;img&gt;</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;pic&gt;" id="q30opt2" name="q30[]" />
+    <label class="form-check-label" for="q30opt2">&lt;pic&gt;</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="&lt;image&gt;" id="q30opt3" name="q30[]" />
+    <label class="form-check-label" for="q30opt3">&lt;image&gt;</label>
+  </div>
+  <div class="form-check mb-3">
+    <input class="form-check-input" type="checkbox" value="&lt;picture&gt;" id="q30opt4" name="q30[]" />
+    <label class="form-check-label" for="q30opt4">&lt;picture&gt;</label>
+  </div>
+
+  <a type="submit" href="result.html" class="btn btn-primary mt-3">Submit Answers</a>
+</form>
+
+
+    
 </div>
+    
 
 
   </div>

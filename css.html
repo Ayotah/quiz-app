@@ -419,9 +419,48 @@ nav ul li a:hover {
 }
       </code></pre>
         </div>
+        <div class="page">
+  <h2 style="color: orange;">9. Flexbox Basics</h2>
+  <p><strong style="color: orange;">display: flex</strong> is used to make a container a flex container, enabling flexible layouts.</p>
+  <pre><code>
+.container {
+  display: flex;
+}
+  </code></pre>
+
+  <p><strong style="color: orange;">justify-content</strong> controls the horizontal alignment of flex items:</p>
+  <pre><code>
+.container {
+  justify-content: center; /* center items horizontally */
+  justify-content: space-between; /* space between items */
+  justify-content: flex-end; /* items at the end */
+}
+  </code></pre>
+
+  <p><strong style="color: orange;">align-items</strong> controls vertical alignment of flex items:</p>
+  <pre><code>
+.container {
+  align-items: center; /* center items vertically */
+  align-items: flex-start; /* align items to the top */
+  align-items: flex-end; /* align items to the bottom */
+}
+  </code></pre>
+
+  <p>You can combine them:</p>
+  <pre><code>
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  </code></pre>
+
+  <p>This is very useful for centering elements both horizontally and vertically.</p>
+</div>
+
 
         <div class="page">
-          <h2 style="color: orange;">9. Let's Practice</h2>
+          <h2 style="color: orange;">10. Let's Practice</h2>
           <p>Create a CSS stylesheet that includes:</p>
           <ul>
             <li>A colored background for the body</li>
@@ -431,13 +470,15 @@ nav ul li a:hover {
             <li>Use of different positioning techniques</li>
           </ul>
         </div>
+
+        
       </div>
 
       <!-- Navigation buttons -->
-      <div class="d-flex justify-content-between mt-4">
+      <!-- <div class="d-flex justify-content-between mt-4">
         <button id="prevBtn" class="btn btn-secondary" disabled>Previous</button>
         <button id="nextBtn" class="btn btn-primary">Next</button>
-      </div>
+      </div> -->
     </div>
 
   </div>

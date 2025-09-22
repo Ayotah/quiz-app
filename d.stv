@@ -1,0 +1,144 @@
+  <div class="main-content container mt-5 pt-4">
+    <h1 class="text-center mb-4" style="color: orange;">JavaScript Learning Notes</h1>
+
+    <div id="lesson-container">
+      <!-- Page 1: Data Types -->
+      <div class="page active">
+        <h2 style="color: orange;">1. Data Types</h2>
+        <p>JavaScript has several data types:</p>
+        <ul>
+          <li>String, Number, Boolean</li>
+          <li>Null, Undefined</li>
+          <li>Object, Array</li>
+        </ul>
+        <pre><code>
+let name = "Alice";
+let age = 25;
+let isStudent = true;
+let car = null;
+let city;
+let user = {name: "Bob", age: 30};
+let colors = ["red", "green"];
+        </code></pre>
+      </div>
+
+      <!-- Page 2: Variables -->
+      <div class="page">
+        <h2 style="color: orange;">2. Variables</h2>
+        <p>Variables store data. Use <code>let</code> or <code>const</code>.</p>
+        <pre><code>
+let x = 10;
+const pi = 3.14;
+        </code></pre>
+      </div>
+
+      <!-- Page 3: Functions -->
+      <div class="page">
+        <h2 style="color: orange;">3. Functions</h2>
+        <pre><code>
+function greet(name) {
+  return "Hello " + name;
+}
+
+const add = function(a, b) {
+  return a + b;
+};
+
+const multiply = (a, b) => a * b;
+        </code></pre>
+      </div>
+
+      <!-- Page 4: Arrays & Methods -->
+      <div class="page">
+        <h2 style="color: orange;">4. Arrays & Methods</h2>
+        <pre><code>
+let fruits = ["apple", "banana"];
+
+fruits.push("orange");
+fruits.pop();
+fruits.shift();
+fruits.unshift("kiwi");
+fruits.includes("banana");
+fruits.indexOf("apple");
+fruits.join(", ");
+        </code></pre>
+      </div>
+
+      <!-- Page 5: Conditionals -->
+      <div class="page">
+        <h2 style="color: orange;">5. Conditionals</h2>
+        <pre><code>
+let age = 18;
+
+if (age >= 18) {
+  console.log("Adult");
+} else {
+  console.log("Minor");
+}
+
+let result = age >= 18 ? "Adult" : "Minor";
+        </code></pre>
+      </div>
+
+      <!-- Page 6: Loops -->
+      <div class="page">
+        <h2 style="color: orange;">6. Loops</h2>
+        <pre><code>
+// for loop
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+
+// while loop
+let i = 0;
+while (i < 5) {
+  console.log(i);
+  i++;
+}
+
+// do...while loop
+let j = 0;
+do {
+  console.log(j);
+  j++;
+} while (j < 5);
+
+// for...of loop
+let colors = ["red", "green"];
+for (let color of colors) {
+  console.log(color);
+}
+
+// forEach
+colors.forEach(function(c) {
+  console.log(c);
+});
+
+// break & continue
+for (let i = 0; i < 10; i++) {
+  if (i === 5) break;
+  if (i === 2) continue;
+  console.log(i);
+}
+        </code></pre>
+      </div>
+
+      <!-- Page 7: Let's Practice -->
+      <div class="page">
+        <h2 style="color: orange;">7. Let's Practice</h2>
+        <ul>
+          <li>Create a function to add two numbers</li>
+          <li>Create an array of your favorite colors</li>
+          <li>Use a loop to print numbers from 1 to 10</li>
+          <li>Use an if/else to check if a number is even or odd</li>
+          <li>Use forEach to print each item in an array</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <!-- <div class="d-flex justify-content-between mt-4">
+      <button class="btn btn-secondary" id="prevBtn" disabled>Previous</button>
+      <button class="btn btn-primary" id="nextBtn">Next</button>
+    </div> -->
+  </div>
